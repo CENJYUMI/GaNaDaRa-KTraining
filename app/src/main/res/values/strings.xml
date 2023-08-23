@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Final Project</string>
+
+    //LOGIN-REGISTER UI
+    <string name="name">NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">SIGN IN</string>
+    <string name="speakable">.</string>
+    <string name="Noaccount">Don\'t have an account?</string>
+    <string name="haveAccount">Already have an account?</string>
+    <string name="Signup">SIGN UP</string>
+    <string name="WELCOME">WELCOME \nBACK!</string>
+    <string name="welcome2">Hey! Good to see you again.</string>
+    <string name="we_are_happy_to_see_you_here">We are happy to see you here.</string>
+
+    //welcome note
+    <string name="WELCOMENOTE1">Welcome to</string>
+    <string name="WELCOMENOTE2">GaNaDaRa</string>
+    <string name="WELCOMENOTE3">ㄱㄴㄷㄹ</string>
+    <string name="WELCOMENOTE4">K-Training </string>
+    <string name="WELCOMENOTE5">Your Journey to Mastering Korean!</string>
+    <string name="WELCOMENOTE6">안녕하세요! (Annyeonghaseyo!)</string>
+    <string name="start">START</string>
+
+    //Main string
+    <string name="beginner">Basic</string>
+    <string name="elementary">Intermediate</string>
+
+    //Basic
+    <string name="vowels">Vowels</string>
+    <string name="conso">Consonants</string>
+    <string name="combirules">Combination Rules</string>
+    <string name="numbersUnit">Numbers &amp; Units</string>
+    <string name="dateTime">Date &amp; Time</string>
+    <string name="locationDirection">Location &amp; Direction</string>
+
+
+
+</resources>
