@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">Final Project</string>
+    <string name="app_name">GaNaDaRa K-Training</string>
+    <string name="open_nav">Open Navigation</string>
+    <string name="close_nav">Close Navigation</string>
+
 
     //LOGIN-REGISTER UI
     <string name="name">NAME</string>
@@ -35,6 +38,291 @@
     <string name="numbersUnit">Numbers &amp; Units</string>
     <string name="dateTime">Date &amp; Time</string>
     <string name="locationDirection">Location &amp; Direction</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //basic vowels
+    <string name="Basic">Basic Vowels</string>
+    <string name="a">ㅏ</string>
+    <string name="ya">ㅑ</string>
+    <string name="eo">ㅓ</string>
+    <string name="yeo">ㅕ</string>
+    <string name="o">ㅗ</string>
+    <string name="yo">ㅛ</string>
+    <string name="u">ㅜ</string>
+    <string name="yu">ㅠ</string>
+    <string name="eu">ㅡ</string>
+    <string name="i">ㅣ</string>
+
+    <string name="a2">"a"</string>
+    <string name="ya2">"ya"</string>
+    <string name="eo2">"eo"</string>
+    <string name="yeo2">"yeo"</string>
+    <string name="o2">"o"</string>
+    <string name="yo2">"yo"</string>
+    <string name="u2">"u"</string>
+    <string name="yu2">"yu"</string>
+    <string name="eu2">"eu"</string>
+    <string name="i2">"i"</string>
+
+    //basic vowels
+    <string name="doubletriple">Double/Triple Vowels</string>
+    <string name="ae">ㅐ</string>
+    <string name="yae">ㅒ</string>
+    <string name="e">ㅔ</string>
+    <string name="ye">ㅖ</string>
+    <string name="oe">ㅚ</string>
+    <string name="wa">ㅘ</string>
+    <string name="wae">ㅙ</string>
+    <string name="wi">ㅟ</string>
+    <string name="wo">ㅝ</string>
+    <string name="we">ㅞ</string>
+    <string name="ui">ㅢ</string>
+    //double vowels
+    <string name="ae2">"ae"</string>
+    <string name="yae2">"yae"</string>
+    <string name="e2">"e"</string>
+    <string name="ye2">"ye"</string>
+    <string name="oe2">"oe"</string>
+    <string name="wa2">"wa"</string>
+    <string name="wae2">"wae"</string>
+    <string name="wi2">"wi"</string>
+    <string name="wo2">"wo"</string>
+    <string name="we2">"we"</string>
+    <string name="ui2">"ui"</string>
+
+    //consonants
+    <string name="Consonantssss">Basic Consonants</string>
+    <string name="ga">ㄱ</string>
+    <string name="na">ㄴ</string>
+    <string name="da">ㄷ</string>
+    <string name="ra">ㄹ</string>
+    <string name="ma">ㅁ</string>
+    <string name="ba">ㅂ</string>
+    <string name="sa">ㅅ</string>
+    <string name="ng">ㅇ</string>
+    <string name="ja">ㅈ</string>
+    <string name="cha">ㅊ</string>
+    <string name="ka">ㅋ</string>
+    <string name="ta">ㅌ</string>
+    <string name="pa">ㅍ</string>
+    <string name="ha">ㅎ</string>
+
+    <string name="ga2">g/k</string>
+    <string name="na2">n</string>
+    <string name="da2">d/t</string>
+    <string name="ra2">l/r</string>
+    <string name="ma2">m</string>
+    <string name="ba2">b/p</string>
+    <string name="sa2">s</string>
+    <string name="ng2">ng</string>
+    <string name="ja2">j</string>
+    <string name="cha2">ch</string>
+    <string name="ka2">k</string>
+    <string name="ta2">t</string>
+    <string name="pa2">p</string>
+    <string name="ha2">h</string>
+    //double consonants
+    <string name="doubletripleC">Double/Triple Consonants</string>
+    <string name="ggkk">ㄲ</string>
+    <string name="ddtt">ㄸ</string>
+    <string name="bbpp">ㅃ</string>
+    <string name="ss">ㅆ</string>
+    <string name="jj">ㅉ</string>
+
+    <string name="ggkk2">gg/kk</string>
+    <string name="ddtt2">dd/tt</string>
+    <string name="bbpp2">bb/pp</string>
+    <string name="ss2">ss</string>
+    <string name="jj2">jj</string>
+
+    //numbers
+    <string name="numbers">Numbers</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="ten">10</string>
+    <string name="twenty">20</string>
+    <string name="thirty">30</string>
+    <string name="forty">40</string>
+    <string name="fifty">50</string>
+    <string name="sixty">60</string>
+    <string name="seventy">70</string>
+    <string name="eighty">80</string>
+    <string name="ninety">90</string>
+    <string name="oneh">100</string>
+    <string name="onek">1,000</string>
+    <string name="tenk">10,000</string>
+    <string name="hundredK">100,000</string>
+    <string name="onemil">1,000,000</string>
+    <string name="tenmil">10,000,000</string>
+    <string name="hundredmil">100,000,000</string>
+    <string name="onebil">1,000,000,000</string>
+
+    //sino-korean
+    <string name="Sino">Sino-korean</string>
+    <string name="zero2">yeong/gong</string>
+    <string name="one2">il</string>
+    <string name="two2">i</string>
+    <string name="three2">sam</string>
+    <string name="four2">sa</string>
+    <string name="five2">o</string>
+    <string name="six2">yuk</string>
+    <string name="seven2">chil</string>
+    <string name="eight2">pal</string>
+    <string name="nine2">gu</string>
+    <string name="ten1">shib</string>
+    <string name="twenty2">i-shib</string>
+    <string name="thirty2">sam-shib</string>
+    <string name="forty2">sa-shib</string>
+    <string name="fifty2">o-shib</string>
+    <string name="sixty2">yuk-shib</string>
+    <string name="seventy2">chil-shib</string>
+    <string name="eighty2">pal-shib</string>
+    <string name="ninety2">gu-shib</string>
+    <string name="oneh2">baek</string>
+    <string name="onek2">cheon</string>
+    <string name="tenk2">man</string>
+    <string name="hundredK2">shib-man</string>
+    <string name="onemil2">baek-man</string>
+    <string name="tenmil2">cheon-man</string>
+    <string name="hundredmil2">eok</string>
+    <string name="oneBil2">baek-eok</string>
+    //sino korean
+    <string name="yeong">영</string>
+    <string name="il">일</string>
+    <string name="ii">이</string>
+    <string name="sam">삼</string>
+    <string name="saa">사</string>
+    <string name="oo">오</string>
+    <string name="yuk">육</string>
+    <string name="chil">칠</string>
+    <string name="pal">팔</string>
+    <string name="gu">구</string>
+    <string name="shib">십</string>
+    <string name="ishib">이십</string>
+    <string name="samshib">삼십</string>
+    <string name="sashib">사십</string>
+    <string name="oshib">오십</string>
+    <string name="yukshib">육십</string>
+    <string name="chilshib">칠십</string>
+    <string name="palshib">팔십</string>
+    <string name="gushib">구십</string>
+    <string name="baek">백</string>
+    <string name="cheon">천</string>
+    <string name="man">만</string>
+    <string name="shibman">십만</string>
+    <string name="baekman">백만</string>
+    <string name="cheonman">천만</string>
+    <string name="eok">억</string>
+    <string name="baegeok">백억</string>
+
+    //Native korean
+    <string name="nativee">Native-korean</string>
+    <string name="one3">hana</string>
+    <string name="two3">dul</string>
+    <string name="three3">set</string>
+    <string name="four3">net</string>
+    <string name="five3">da-seot</string>
+    <string name="six3">yeo-seot</string>
+    <string name="seven3">il-gop</string>
+    <string name="eight3">yeo-deol</string>
+    <string name="nine3">a-hop</string>
+    <string name="ten3">yeol</string>
+    <string name="twenty3">seu-mul</string>
+    <string name="thirty3">seo-reun</string>
+    <string name="forty3">ma-heun</string>
+    <string name="fifty3">shwin</string>
+    <string name="sixty3">ye-sun</string>
+    <string name="seventy3">il-heun</string>
+    <string name="eighty3">yeo-deun</string>
+    <string name="ninety3">a-heun</string>
+
+    <string name="hana">하나</string>
+    <string name="dul">둘</string>
+    <string name="set">셋</string>
+    <string name="net">넷</string>
+    <string name="daseot">다섯</string>
+    <string name="yeoseot">여섯</string>
+    <string name="ilgop">일곱</string>
+    <string name="yeodeol">여덟 </string>
+    <string name="ahop">아홉</string>
+    <string name="yeol">열</string>
+    <string name="seumul">스물</string>
+    <string name="seoreun">서른</string>
+    <string name="maheun">마흔</string>
+    <string name="shwin">쉰</string>
+    <string name="yesun">예순</string>
+    <string name="ilheun">일흔</string>
+    <string name="yeodeun">여든</string>
+    <string name="aheun">아흔</string>
+
+    //unit
+    <string name="units">Units</string>
+    <string name="individual">명</string>
+    <string name="respectform">분</string>
+    <string name="piece">개</string>
+    <string name="animals">마리</string>
+    <string name="unit">대</string>
+    <string name="pair">벌</string>
+    <string name="pair2">켤레</string>
+    <string name="bundleblossom">송이</string>
+    <string name="building">채</string>
+    <string name="bowl">그릇</string>
+    <string name="piece2">자루</string>
+    <string name="glass">잔</string>
+    <string name="sheet">장</string>
+    <string name="bottle">병</string>
+    <string name="pack">갑</string>
+    <string name="pack2">봉지</string>
+    <string name="can">통</string>
+    <string name="al">알</string>
+
+    <string name="units2">Units</string>
+    <string name="individual2">individual</string>
+    <string name="respectform2">respect form</string>
+    <string name="piece22">piece</string>
+    <string name="animals2">animal</string>
+    <string name="unit2">unit</string>
+    <string name="pair22">pair</string>
+    <string name="pair33">pair</string>
+    <string name="bundleblossom2">bundle/blossom</string>
+    <string name="building2">building</string>
+    <string name="bowl2">bowl</string>
+    <string name="piece222">piece</string>
+    <string name="glass2">glass</string>
+    <string name="sheet2">sheet</string>
+    <string name="bottle2">bottle</string>
+    <string name="pack22">pack</string>
+    <string name="pack222">pack</string>
+    <string name="can2">can</string>
+    <string name="al2">al</string>
+
+    //Person/Objects
+    <string name="person">사람 person</string>
+    <string name="fruit">과일 fruits</string>
+    <string name="animal">동물 animals \n(개 dog, 고양이 cat, 생선 fish)  </string>
+    <string name="unitt">기계류 machinery, 자동차 car, 텔레비전 TV, 냉장고 refrigerator </string>
+    <string name="pairr">옷 clothes, 정장 suits, 한복 Korean traditional clothes, 수저 spoon and chopsticks </string>
+    <string name="pairr2">양말 socks,신발 shoes, 장갑 gloves</string>
+    <string name="bundle">포도 grape, 바나나 banana, 꽃 flower</string>
+    <string name="buildinggg">집</string>
+    <string name="bowls">밥 rice, 국 soup, 반찬 side dish </string>
+    <string name="banana">쌀 rice, 연필 pencil</string>
+    <string name="flower">차 tea, 커피 coffee, 주스 juice</string>
+    <string name="house">종이 paper, 지폐 bill, 수표 check, 카드 card </string>
+    <string name="rice">아흔</string>
+    <string name="example">example</string>
+
+    //example
+
 
 
 

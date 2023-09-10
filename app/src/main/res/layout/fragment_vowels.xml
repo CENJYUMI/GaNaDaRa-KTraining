@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vowels"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgbgbg"
+        tools:context=".Basic.VowelsFragment">
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/a"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toStartOf="@+id/ya"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/a2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/a2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/ya2"
+            app:layout_constraintHorizontal_bias="0.027"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a" />
+
+        <TextView
+            android:id="@+id/ya"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/ya"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toStartOf="@+id/eo"
+            app:layout_constraintStart_toEndOf="@+id/a"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ya2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/ya2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/eo2"
+            app:layout_constraintStart_toEndOf="@+id/a2"
+            app:layout_constraintTop_toBottomOf="@+id/ya" />
+
+        <TextView
+            android:id="@+id/eo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/eo"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toStartOf="@+id/yeo"
+            app:layout_constraintStart_toEndOf="@+id/ya"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/eo2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/eo2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/yeo2"
+            app:layout_constraintStart_toEndOf="@+id/ya2"
+            app:layout_constraintTop_toBottomOf="@+id/eo" />
+
+        <TextView
+            android:id="@+id/yeo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/yeo"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/eo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/yeo2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/yeo2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/eo2"
+            app:layout_constraintTop_toBottomOf="@+id/yeo" />
+
+        <TextView
+            android:id="@+id/o"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/o"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toStartOf="@+id/yo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a2" />
+
+        <TextView
+            android:id="@+id/o2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/o2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/yo2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/o" />
+
+        <TextView
+            android:id="@+id/yo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/yo"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toStartOf="@+id/u"
+            app:layout_constraintStart_toEndOf="@+id/o"
+            app:layout_constraintTop_toBottomOf="@+id/ya2" />
+
+        <TextView
+            android:id="@+id/yo2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/yo2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/u2"
+            app:layout_constraintStart_toEndOf="@+id/o2"
+            app:layout_constraintTop_toBottomOf="@+id/yo" />
+
+        <TextView
+            android:id="@+id/u"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/u"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toStartOf="@+id/yu"
+            app:layout_constraintStart_toEndOf="@+id/yo"
+            app:layout_constraintTop_toBottomOf="@+id/eo2" />
+
+        <TextView
+            android:id="@+id/u2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/u2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/yu2"
+            app:layout_constraintStart_toEndOf="@+id/yo2"
+            app:layout_constraintTop_toBottomOf="@+id/u" />
+
+        <TextView
+            android:id="@+id/yu"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/yu"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/u"
+            app:layout_constraintTop_toBottomOf="@+id/yeo2" />
+
+        <TextView
+            android:id="@+id/yu2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/yu2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/u2"
+            app:layout_constraintTop_toBottomOf="@+id/yu" />
+
+        <TextView
+            android:id="@+id/eu"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="121dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/eu"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toStartOf="@+id/i"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/yo2" />
+
+        <TextView
+            android:id="@+id/eu2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/eu2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/i2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eu" />
+
+        <TextView
+            android:id="@+id/ae2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/ae2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/yae2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ae" />
+
+        <TextView
+            android:id="@+id/oe2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/oe2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/wa2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oe" />
+
+        <TextView
+            android:id="@+id/wo2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/wo2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/we2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wo" />
+
+        <TextView
+            android:id="@+id/we2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/we2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/ui2"
+            app:layout_constraintStart_toEndOf="@+id/wo2"
+            app:layout_constraintTop_toBottomOf="@+id/we" />
+
+        <TextView
+            android:id="@+id/ui2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="65dp"
+            android:text="@string/ui2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/we2"
+            app:layout_constraintTop_toBottomOf="@+id/ui" />
+
+        <TextView
+            android:id="@+id/wa2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/wa2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/wae2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/oe2"
+            app:layout_constraintTop_toBottomOf="@+id/wa" />
+
+        <TextView
+            android:id="@+id/wae2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/wae2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/wi2"
+            app:layout_constraintStart_toEndOf="@+id/wa2"
+            app:layout_constraintTop_toBottomOf="@+id/wae" />
+
+        <TextView
+            android:id="@+id/wi2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/wi2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wi" />
+
+        <TextView
+            android:id="@+id/yae2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/yae2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/e2"
+            app:layout_constraintStart_toEndOf="@+id/ae2"
+            app:layout_constraintTop_toBottomOf="@+id/yae" />
+
+        <TextView
+            android:id="@+id/e2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/e2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/ye2"
+            app:layout_constraintStart_toEndOf="@+id/yae2"
+            app:layout_constraintTop_toBottomOf="@+id/e" />
+
+        <TextView
+            android:id="@+id/ye2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/ye2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/e2"
+            app:layout_constraintTop_toBottomOf="@+id/ye" />
+
+        <TextView
+            android:id="@+id/i"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="117dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/i"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/eu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/eu" />
+
+        <TextView
+            android:id="@+id/i2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="115dp"
+            android:text="@string/i2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/eu2"
+            app:layout_constraintTop_toBottomOf="@+id/i" />
+
+        <TextView
+            android:id="@+id/BasicVowels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="@string/Basic"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/doubleTripleVowels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/berkshire_swash"
+            android:text="@string/doubletriple"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eu2" />
+
+        <TextView
+            android:id="@+id/ae"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/ae"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toStartOf="@+id/yae"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doubleTripleVowels" />
+
+        <TextView
+            android:id="@+id/oe"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/oe"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ae2" />
+
+        <TextView
+            android:id="@+id/wo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/wo"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wa2" />
+
+        <TextView
+            android:id="@+id/we"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="265dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/we"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doubleTripleVowels" />
+
+        <TextView
+            android:id="@+id/ui"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/ui"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wae2" />
+
+        <TextView
+            android:id="@+id/wa"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/wa"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toStartOf="@+id/wae"
+            app:layout_constraintStart_toEndOf="@+id/oe"
+            app:layout_constraintTop_toBottomOf="@+id/yae2" />
+
+        <TextView
+            android:id="@+id/wae"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/wae"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toStartOf="@+id/wi"
+            app:layout_constraintStart_toEndOf="@+id/wa"
+            app:layout_constraintTop_toBottomOf="@+id/e2" />
+
+        <TextView
+            android:id="@+id/wi"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/wi"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/wae"
+            app:layout_constraintTop_toBottomOf="@+id/ye2" />
+
+        <TextView
+            android:id="@+id/yae"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/yae"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toStartOf="@+id/e"
+            app:layout_constraintStart_toEndOf="@+id/ae"
+            app:layout_constraintTop_toBottomOf="@+id/doubleTripleVowels" />
+
+        <TextView
+            android:id="@+id/e"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/e"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toStartOf="@+id/ye"
+            app:layout_constraintStart_toEndOf="@+id/yae"
+            app:layout_constraintTop_toBottomOf="@+id/doubleTripleVowels" />
+
+        <TextView
+            android:id="@+id/ye"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/drawer_border"
+            android:text="@string/ye"
+            android:textAlignment="center"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/e"
+            app:layout_constraintTop_toBottomOf="@+id/doubleTripleVowels" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

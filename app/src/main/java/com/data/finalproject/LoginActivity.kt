@@ -8,7 +8,7 @@ import android.text.method.PasswordTransformationMethod
 import android.view.View
 import android.widget.Toast
 import com.data.finalproject.databinding.ActivityLoginBinding
-import com.data.finalproject.databinding.ActivityMainBinding
+
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
