@@ -18,245 +18,1237 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="1dp"
             android:fontFamily="@font/berkshire_swash"
             android:text="@string/units"
             android:textAlignment="center"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/UnitsRecyclerView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/frameLayout4"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/bgbg"
-            app:layout_constraintBottom_toTopOf="@+id/piece"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="NotSibling">
-
-            <TextView
-                android:id="@+id/individual"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginEnd="2dp"
-                android:background="@drawable/drawer_border"
-                android:gravity="center"
-                android:text="@string/individual"
-                android:textSize="34sp"
-                app:layout_constraintEnd_toStartOf="@+id/respectform"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/respectform"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginEnd="5dp"
-                android:background="@drawable/drawer_border"
-                android:gravity="center"
-                android:text="@string/respectform"
-                android:textSize="34sp"
-                app:layout_constraintEnd_toStartOf="@+id/person"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/person"
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginEnd="4dp"
-                android:background="@drawable/header_bkg"
-                android:gravity="center"
-                android:text="@string/person"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/example"
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="19dp"
-                android:layout_marginEnd="4dp"
-                android:background="@drawable/header_bkg"
-                android:gravity="center"
-                android:text="@string/example"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/person" />
-
-            <TextView
-                android:id="@+id/individual2"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="16dp"
-                android:gravity="center"
-                android:text="@string/individual2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/respectform2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/individual" />
-
-            <TextView
-                android:id="@+id/respectform2"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="13dp"
-                android:layout_marginEnd="7dp"
-                android:gravity="center"
-                android:text="@string/respectform2"
-                app:layout_constraintEnd_toStartOf="@+id/example"
-                app:layout_constraintTop_toBottomOf="@+id/respectform" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/frameLayout5"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/bgbg"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/UnitsRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout4">
+            app:layout_constraintTop_toBottomOf="@+id/Units" />
 
-            <TextView
-                android:id="@+id/piece"
-                android:layout_width="100dp"
-                android:layout_height="70dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginEnd="33dp"
-                android:background="@drawable/drawer_border"
-                android:gravity="center"
-                android:text="@string/piece"
-                android:textSize="34sp"
-                app:layout_constraintEnd_toStartOf="@+id/fruits"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout4"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="50dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/piece"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            tools:ignore="NotSibling">-->
 
-            <TextView
-                android:id="@+id/fruits"
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginEnd="4dp"
-                android:background="@drawable/header_bkg"
-                android:gravity="center"
-                android:text="@string/fruit"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <!--            <TextView-->
+        <!--                android:id="@+id/individual"-->
+        <!--                android:layout_width="70dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="10dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="2dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/individual"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/respectform"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
 
-            <TextView
-                android:id="@+id/example2"
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="19dp"
-                android:layout_marginEnd="4dp"
-                android:background="@drawable/header_bkg"
-                android:gravity="center"
-                android:text="TextView"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/fruits" />
+        <!--            <TextView-->
+        <!--                android:id="@+id/respectform"-->
+        <!--                android:layout_width="70dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="1dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/respectform"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/person"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
 
-            <TextView
-                android:id="@+id/piece2"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="36dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginEnd="51dp"
-                android:layout_marginBottom="16dp"
-                android:gravity="center"
-                android:text="@string/piece22"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/example2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/piece" />
+        <!--            <TextView-->
+        <!--                android:id="@+id/person"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/person"-->
+        <!--                android:textSize="20sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--            <TextView-->
+        <!--                android:id="@+id/example"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example1"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/person" />-->
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/frameLayout6"
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/bgbg"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout5">
+        <!--            <TextView-->
+        <!--                android:id="@+id/individual2"-->
+        <!--                android:layout_width="70dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="8dp"-->
+        <!--                android:layout_marginTop="13dp"-->
+        <!--                android:layout_marginEnd="2dp"-->
+        <!--                android:layout_marginBottom="16dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/individual2"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/respectform2"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/individual" />-->
 
-            <TextView
-                android:id="@+id/mari"
-                android:layout_width="100dp"
-                android:layout_height="70dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="3dp"
-                android:layout_marginEnd="33dp"
-                android:background="@drawable/drawer_border"
-                android:gravity="center"
-                android:text="@string/animals"
-                android:textSize="34sp"
-                app:layout_constraintEnd_toStartOf="@+id/animals"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <!--            <TextView-->
+        <!--                android:id="@+id/respectform2"-->
+        <!--                android:layout_width="70dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginTop="13dp"-->
+        <!--                android:layout_marginEnd="7dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/respectform2"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/respectform" />-->
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-            <TextView
-                android:id="@+id/animals"
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="1dp"
-                android:layout_marginEnd="4dp"
-                android:background="@drawable/header_bkg"
-                android:gravity="center"
-                android:text="@string/animal"
-                android:textSize="17sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout5"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout4">-->
 
-            <TextView
-                android:id="@+id/example3"
-                android:layout_width="250dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginBottom="1dp"
-                android:background="@drawable/header_bkg"
-                android:gravity="center"
-                android:text="TextView"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/animals" />
+        <!--            <TextView-->
+        <!--                android:id="@+id/piece"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="33dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/piece"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/fruits"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
 
-            <TextView
-                android:id="@+id/animals2"
-                android:layout_width="70dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="36dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginEnd="51dp"
-                android:layout_marginBottom="16dp"
-                android:gravity="center"
-                android:text="@string/animals2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/example2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/piece"
-                tools:ignore="NotSibling" />
+        <!--            <TextView-->
+        <!--                android:id="@+id/fruits"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/fruit"-->
+        <!--                android:textSize="20sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <!--            <TextView-->
+        <!--                android:id="@+id/example2"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example2"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/fruits" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/piece2"-->
+        <!--                android:layout_width="70dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="36dp"-->
+        <!--                android:layout_marginTop="13dp"-->
+        <!--                android:layout_marginEnd="51dp"-->
+        <!--                android:layout_marginBottom="16dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/piece22"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example2"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/piece" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout6"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout5">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/mari"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="33dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/animals"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/animals"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/animals"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/animal"-->
+        <!--                android:textSize="17sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example3"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example3"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/animals" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/animals2"-->
+        <!--                android:layout_width="70dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="36dp"-->
+        <!--                android:layout_marginTop="13dp"-->
+        <!--                android:layout_marginEnd="51dp"-->
+        <!--                android:layout_marginBottom="16dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/animals2"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example2"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/piece"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout7"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout6">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/dae"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="33dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/unit"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/unitss"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/unitss"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/unitt"-->
+        <!--                android:textSize="16sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example4"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example4"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/unitss" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/units2"-->
+        <!--                android:layout_width="70dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="36dp"-->
+        <!--                android:layout_marginTop="13dp"-->
+        <!--                android:layout_marginEnd="51dp"-->
+        <!--                android:layout_marginBottom="16dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/unit2"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example2"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/piece"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout8"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout7">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/pairrr22"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="36dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/pair"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/pairrrr"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/pairrrr"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/pairr"-->
+        <!--                android:textSize="12sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example5"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example5"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/pairrrr" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/pair22"-->
+        <!--                android:layout_width="70dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="36dp"-->
+        <!--                android:layout_marginTop="13dp"-->
+        <!--                android:layout_marginEnd="51dp"-->
+        <!--                android:layout_marginBottom="16dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/pair22"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example2"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/piece"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout9"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout8">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/pairrr222"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="36dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/pair2"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/pairrrr2"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/pairrrr2"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/pairr2"-->
+        <!--                android:textSize="16sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example6"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginTop="17dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example6"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/pairrrr2" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/pair2222"-->
+        <!--                android:layout_width="70dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="36dp"-->
+        <!--                android:layout_marginTop="13dp"-->
+        <!--                android:layout_marginEnd="51dp"-->
+        <!--                android:layout_marginBottom="16dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/pair22"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example2"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/piece"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout10"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout9">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/bundleee"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="41dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/bundleblossom"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/bundlee"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/bundlee"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/bundle"-->
+        <!--                android:textSize="16sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example7"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginTop="18dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example7"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/bundlee" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/bundle"-->
+        <!--                android:layout_width="120dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="20dp"-->
+        <!--                android:layout_marginTop="5dp"-->
+        <!--                android:layout_marginEnd="25dp"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/bundleblossom2"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example7"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/bundleee"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout11"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout10">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/building"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="41dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/building"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/house"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/house"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/buildinggg"-->
+        <!--                android:textSize="20sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example8"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginTop="18dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example8"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/house" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/building2"-->
+        <!--                android:layout_width="120dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="20dp"-->
+        <!--                android:layout_marginTop="5dp"-->
+        <!--                android:layout_marginEnd="25dp"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/building2"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example7"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/bundleee"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout12"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout11">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/bowl"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="41dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/bowl"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/rice"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/rice"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/bowls"-->
+        <!--                android:textSize="18sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example9"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginTop="18dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example9"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/rice" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/bowl2"-->
+        <!--                android:layout_width="120dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="20dp"-->
+        <!--                android:layout_marginTop="5dp"-->
+        <!--                android:layout_marginEnd="25dp"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/bowl2"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example7"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/bundleee"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout13"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout12">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/piece2222"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="41dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/piece2"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/pencil2"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/pencil2"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/sack"-->
+        <!--                android:textSize="18sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example10"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginTop="18dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example10"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/pencil2" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/piece22"-->
+        <!--                android:layout_width="120dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="20dp"-->
+        <!--                android:layout_marginTop="5dp"-->
+        <!--                android:layout_marginEnd="25dp"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/piece22"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example7"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/bundleee"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout14"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout13">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/glass"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="41dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/glass"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/tea"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tea"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/glasss"-->
+        <!--                android:textSize="18sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example11"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginTop="18dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example11"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/tea" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/glass2"-->
+        <!--                android:layout_width="120dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="20dp"-->
+        <!--                android:layout_marginTop="5dp"-->
+        <!--                android:layout_marginEnd="25dp"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/glass2"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example7"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/bundleee"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout15"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout14">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/sheet"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="41dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/sheet"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/paper"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/paper"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/sheett"-->
+        <!--                android:textSize="18sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example12"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginTop="18dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example12"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/paper" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/sheett2"-->
+        <!--                android:layout_width="120dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="20dp"-->
+        <!--                android:layout_marginTop="5dp"-->
+        <!--                android:layout_marginEnd="25dp"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/sheet2"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example7"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/bundleee"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout16"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout14">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/bottle"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="41dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/bottle"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/water"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/water"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/bottlee"-->
+        <!--                android:textSize="18sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example13"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginTop="18dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example13"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/water" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/bottle22"-->
+        <!--                android:layout_width="120dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="20dp"-->
+        <!--                android:layout_marginTop="5dp"-->
+        <!--                android:layout_marginEnd="25dp"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/bottle2"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example7"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/bundleee"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout17"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout15">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/packpack"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="41dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/pack"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/cigarette"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/cigarette"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/packk"-->
+        <!--                android:textSize="18sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example14"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginTop="18dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example14"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/cigarette" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/packk"-->
+        <!--                android:layout_width="120dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="20dp"-->
+        <!--                android:layout_marginTop="5dp"-->
+        <!--                android:layout_marginEnd="25dp"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/pack22"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example7"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/bundleee"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout18"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout17">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/snack"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="41dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/pack2"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/snacks2"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/snacks2"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/packkk"-->
+        <!--                android:textSize="18sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example15"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginTop="18dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example15"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/snacks2" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/packk2"-->
+        <!--                android:layout_width="120dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="20dp"-->
+        <!--                android:layout_marginTop="5dp"-->
+        <!--                android:layout_marginEnd="25dp"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/pack22"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example7"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/bundleee"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout19"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout18">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/can"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="41dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/can"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/paint"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/paint"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/cann"-->
+        <!--                android:textSize="18sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example16"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginTop="18dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example16"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/paint" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/can2"-->
+        <!--                android:layout_width="120dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="20dp"-->
+        <!--                android:layout_marginTop="5dp"-->
+        <!--                android:layout_marginEnd="25dp"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/can2"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example7"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/bundleee"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/frameLayout20"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/bgbg"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/frameLayout19">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/al"-->
+        <!--                android:layout_width="100dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginStart="24dp"-->
+        <!--                android:layout_marginTop="3dp"-->
+        <!--                android:layout_marginEnd="41dp"-->
+        <!--                android:background="@drawable/drawer_border"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/al"-->
+        <!--                android:textSize="34sp"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/egg"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/egg"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:layout_marginTop="1dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/all"-->
+        <!--                android:textSize="18sp"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/example17"-->
+        <!--                android:layout_width="250dp"-->
+        <!--                android:layout_height="70dp"-->
+        <!--                android:layout_marginTop="18dp"-->
+        <!--                android:layout_marginEnd="4dp"-->
+        <!--                android:layout_marginBottom="1dp"-->
+        <!--                android:background="@drawable/header_bkg"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/example17"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/egg" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/al2"-->
+        <!--                android:layout_width="120dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="20dp"-->
+        <!--                android:layout_marginTop="5dp"-->
+        <!--                android:layout_marginEnd="25dp"-->
+        <!--                android:layout_marginBottom="10dp"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="@string/al2"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/example7"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toBottomOf="@+id/bundleee"-->
+        <!--                tools:ignore="NotSibling" />-->
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>ConstraintLayout-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

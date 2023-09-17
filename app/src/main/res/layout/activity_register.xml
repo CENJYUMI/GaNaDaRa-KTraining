@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginStart="10dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginEnd="10dp"
-    android:layout_marginBottom="10dp"
     android:background="@drawable/bglogin"
     tools:context=".RegisterActivity">
 
@@ -25,17 +21,16 @@
         android:paddingBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtHappyToSeeYou"
         tools:ignore="MissingConstraints">
 
-        <com.google.android.material.textfield.TextInputLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/textInputLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="286dp"
+            android:layout_height="48dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="36dp"
             android:layout_marginEnd="10dp"
             android:background="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,21 +39,29 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etNameS"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="270dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="10dp"
                 android:background="#FFFFFF"
                 android:drawableStart="@drawable/baseline_person_24"
-                android:drawablePadding="5dp"
                 android:drawableTint="#03A9F4"
-                android:hint="@string/name" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:hint="@string/name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/textInputLayout3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="286dp"
+            android:layout_height="48dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:background="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
@@ -67,41 +70,57 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etEmailS"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="276dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="10dp"
                 android:background="#FFFFFF"
                 android:drawableStart="@drawable/baseline_email_24"
                 android:drawablePadding="5dp"
                 android:drawableTint="#03A9F4"
                 android:hint="@string/email"
-                android:inputType="text|textEmailAddress" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:inputType="text|textEmailAddress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/textInputLayout5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="10dp"
+            android:layout_height="48dp"
             android:background="#FFFFFF"
             android:backgroundTint="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
-            app:passwordToggleEnabled="true">
+            app:passwordToggleEnabled="true"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="209dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etUsernameS"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:id="@+id/etPasswordS"
+                android:layout_width="287dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
                 android:background="#FFFFFF"
                 android:drawableStart="@drawable/baseline_lock_24"
                 android:drawablePadding="5dp"
                 android:drawableTint="#03A9F4"
                 android:hint="@string/password"
                 android:inputType="text|textPassword"
-                android:textColorHint="#757575" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:textColorHint="#757575"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
             android:id="@+id/signUpBtn"
@@ -117,12 +136,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <com.google.android.material.textfield.TextInputLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/textInputLayout4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="286dp"
+            android:layout_height="48dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:background="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
@@ -130,15 +149,24 @@
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etPasswordS"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:id="@+id/etUsernameS"
+                android:layout_width="276dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
                 android:background="#FFFFFF"
                 android:drawableStart="@drawable/baseline_person_24"
                 android:drawablePadding="5dp"
                 android:drawableTint="#03A9F4"
-                android:hint="@string/username" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:hint="@string/username"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ProgressBar
             android:id="@+id/progressBar2"

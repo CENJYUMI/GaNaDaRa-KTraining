@@ -7,6 +7,7 @@ import android.text.TextUtils
 import android.text.method.PasswordTransformationMethod
 import android.view.View
 import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import com.data.finalproject.databinding.ActivityLoginBinding
 
 import com.google.firebase.auth.FirebaseAuth
@@ -43,26 +44,32 @@ class LoginActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            binding.progressBar.visibility = View.VISIBLE
+//            binding.progressBar.visibility = View.VISIBLE
 
 
             firebaseAuth.signInWithEmailAndPassword(email, pass)
                 .addOnCompleteListener {
-                    binding.progressBar.visibility = View.INVISIBLE
-                    if (it.isSuccessful){
-                        Toast.makeText(this@LoginActivity,"Login Successful", Toast.LENGTH_SHORT).show()
+//                    binding.progressBar.visibility = View.INVISIBLE
+                    if (it.isSuccessful) {
+                        Toast.makeText(this@LoginActivity, "Login Successful", Toast.LENGTH_SHORT)
+                            .show()
                         val intent = Intent(this, WelcomeActivity::class.java)
                         startActivity(intent)
                         finish()
-                    }else{
-                        Toast.makeText(this@LoginActivity, "Authentication failed.", Toast.LENGTH_SHORT).show()
-                        binding.progressBar.visibility = View.INVISIBLE
+                    } else {
+                        Toast.makeText(
+                            this@LoginActivity,
+                            "Authentication failed.",
+                            Toast.LENGTH_SHORT
+                        ).show()
+//                        binding.progressBar.visibility = View.INVISIBLE
                     }
                 }
 
 
         }
-   }
+    }
+
     override fun onStart(){
         super.onStart()
 

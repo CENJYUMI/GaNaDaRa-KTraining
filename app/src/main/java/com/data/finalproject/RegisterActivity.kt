@@ -48,27 +48,19 @@ class RegisterActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            binding.progressBar2.visibility = View.VISIBLE
+//            binding.progressBar2.visibility = View.VISIBLE
 
             firebaseAuth.createUserWithEmailAndPassword(email, pass)
                 .addOnCompleteListener {
-                    binding.progressBar2.visibility = View.INVISIBLE
+//                    binding.progressBar2.visibility = View.INVISIBLE
                     if (it.isSuccessful) {
-                        Toast.makeText(
-                            this@RegisterActivity,
-                            "Account created.",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        Toast.makeText(this@RegisterActivity, "Account created.", Toast.LENGTH_SHORT).show()
                         val intent = Intent(applicationContext, LoginActivity::class.java)
                         startActivity(intent)
                         finish()
                     } else {
                         // If sign in fails, display a message to the user.
-                        Toast.makeText(
-                            this@RegisterActivity,
-                            "Authentication failed.",
-                            Toast.LENGTH_SHORT
-                        ).show()
+                        Toast.makeText(this@RegisterActivity, "Authentication failed.", Toast.LENGTH_SHORT).show()
                     }
                 }
         }

@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginStart="10dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginEnd="10dp"
-    android:layout_marginBottom="10dp"
     android:background="@drawable/bglogin"
     tools:context=".LoginActivity">
 
@@ -30,7 +26,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp"
@@ -46,7 +42,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etEmailL"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:background="#FFFFFF"
                 android:backgroundTint="#FFFFFF"
                 android:drawableStart="@drawable/baseline_email_24"
@@ -54,13 +50,14 @@
                 android:drawableTint="#03A9F4"
                 android:inputType="text|textEmailAddress"
                 android:textColorHint="#D81B60"
-                app:textInputLayoutFocusedRectEnabled="true" />
+                app:textInputLayoutFocusedRectEnabled="true"
+                tools:ignore="TouchTargetSizeCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="263dp"
-            android:layout_height="62dp"
+            android:layout_height="48dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="10dp"
@@ -74,13 +71,14 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPasswordL"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:background="#FFFFFF"
                 android:drawableStart="@drawable/baseline_lock_24"
                 android:drawablePadding="5dp"
                 android:drawableTint="#03A9F4"
                 android:hint="@string/password"
-                android:password="true" />
+                android:password="true"
+                tools:ignore="TouchTargetSizeCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -105,7 +103,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.365" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -145,7 +144,7 @@
         android:id="@+id/TxtWelcomeBack"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
         android:paddingStart="50dp"
         android:text="@string/WELCOME"
         android:textColor="#FFFFFF"

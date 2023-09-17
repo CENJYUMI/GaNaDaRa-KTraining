@@ -24,19 +24,13 @@ class HomeFragment : Fragment() {
         val view = binding.root
 
         binding.basicBtn.setOnClickListener {
-            val basicMainFragment = BasicMainFragment() // Create an instance of BasicMainFragment
+            val basicMainFragment = BasicMainFragment()
             val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.fragment_container, basicMainFragment) // Pass the instance to replace
+            fragmentTransaction.replace(R.id.fragment_container, basicMainFragment)
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
         }
-        binding.IntermediateBtn.setOnClickListener {
-            val basicMainFragment = BasicMainFragment() // Create an instance of BasicMainFragment
-            val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.fragment_container, basicMainFragment) // Pass the instance to replace
-            fragmentTransaction.addToBackStack(null)
-            fragmentTransaction.commit()
-        }
+
 
 
         return view
