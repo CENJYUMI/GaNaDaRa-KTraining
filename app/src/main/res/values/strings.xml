@@ -535,6 +535,14 @@
     <string name="choose_another_quiz">Choose another Quiz</string>
     <string name="result_will_be_shown_here">Result will be shown here</string>
     <string name="score_message">Your score is \n%1$d out of %2$d</string>
+    <string name="todo">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="welcome_to_ganadara_k_training">Welcome to GANADARA K-Training!</string>
+    <string name="our_mission">Our Mission</string>
+    <string name="who_we_are">Who We Are</string>
+    <string name="what_sets_us_apart">What Sets Us Apart</string>
+    <string name="at_ganadara_k_training_we_are_dedicated_to_making_the_journey_of_learning_the_korean_language_as_enjoyable_and_effective_as_possible_our_mission_is_to_provide_accessible_and_comprehensive_language_education_tailored_to_the_needs_of_learners_at_all_levels">At GANADARA K-Training, we are dedicated to making the journey of learning the Korean language as enjoyable and effective as possible. Our mission is to provide accessible and comprehensive language education tailored to the needs of learners at all levels.</string>
+    <string name="we_are_a_team_of_passionate_language_enthusiasts_with_a_deep_love_for_korean_culture_and_language_our_goal_is_to_share_this_enthusiasm_with_you_and_guide_you_through_your_language_learning_journey">We are a team of passionate language enthusiasts, with a deep love for Korean culture and language. Our goal is to share this enthusiasm with you and guide you through your language learning journey.</string>
 
 
 </resources>

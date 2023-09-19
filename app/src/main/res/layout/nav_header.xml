@@ -10,8 +10,8 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <ImageView
-        android:layout_width="66dp"
-        android:layout_height="66dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:src="@drawable/gndrlogo" />
 
     <TextView

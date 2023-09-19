@@ -12,7 +12,7 @@ android:fillViewport="true">
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bgbg"
-        tools:context=".Basic.DateFragment">
+        tools:context=".basic.DateFragment">
 
         <TextView
             android:id="@+id/ilwol"

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bgbgbg"
-        tools:context=".Basic.ConsonantsFragment">
+        tools:context=".basic.ConsonantsFragment">
 
         <TextView
             android:id="@+id/ga"

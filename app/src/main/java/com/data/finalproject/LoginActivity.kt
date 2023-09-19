@@ -8,6 +8,7 @@ import android.text.method.PasswordTransformationMethod
 import android.view.View
 import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.data.finalproject.databinding.ActivityLoginBinding
 
 import com.google.firebase.auth.FirebaseAuth
@@ -81,4 +82,5 @@ class LoginActivity : AppCompatActivity() {
         }
 
     }
+
 }

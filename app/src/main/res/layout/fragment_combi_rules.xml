@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bglogin"
-        tools:context=".Basic.CombiRulesFragment">
+        tools:context=".basic.CombiRulesFragment">
 
         <TextView
             android:id="@+id/rules"
@@ -176,12 +176,12 @@
                 android:id="@+id/txtVowel2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
                 android:layout_marginEnd="146dp"
-                android:layout_marginBottom="34dp"
                 android:text="@string/vowel"
                 android:textColor="#FA07C5"
-                app:layout_constraintBottom_toTopOf="@+id/txtConso"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vowelCharac" />
 
             <TextView
                 android:id="@+id/txtType2"
@@ -241,7 +241,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
-                android:layout_marginBottom="12dp"
+                android:layout_marginBottom="40dp"
                 android:text="@string/consonant"
                 android:textColor="#0047FD"
                 app:layout_constraintBottom_toTopOf="@+id/equal2"
@@ -252,7 +252,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="7dp"
-                android:layout_marginBottom="31dp"
+                android:layout_marginBottom="45dp"
                 android:text="@string/vowel"
                 android:textColor="#FA07C5"
                 app:layout_constraintBottom_toBottomOf="parent"

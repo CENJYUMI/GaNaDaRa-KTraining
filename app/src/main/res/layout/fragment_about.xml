@@ -1,18 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NavigationFragment.AboutFragment">
+    android:fillViewport="true">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:background="#03A9F4"
-        android:text="Home Fragment"
-        android:textSize="30sp" />
+    <androidx.constraintlayout.widget.ConstraintLayout
 
-</RelativeLayout>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/oorangeyellowww"
+        tools:context=".navigationFragment.AboutFragment">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/bowlby_one_sc"
+            android:text="@string/welcome_to_ganadara_k_training"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="11dp"
+            android:fontFamily="@font/bowlby_one_sc"
+            android:text="@string/our_mission"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bowlby_one_sc"
+            android:text="@string/who_we_are"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bowlby_one_sc"
+            android:text="@string/what_sets_us_apart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/bowlby_one_sc"
+            android:text="@string/what_sets_us_apart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="350dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/at_ganadara_k_training_we_are_dedicated_to_making_the_journey_of_learning_the_korean_language_as_enjoyable_and_effective_as_possible_our_mission_is_to_provide_accessible_and_comprehensive_language_education_tailored_to_the_needs_of_learners_at_all_levels"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="350dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/we_are_a_team_of_passionate_language_enthusiasts_with_a_deep_love_for_korean_culture_and_language_our_goal_is_to_share_this_enthusiasm_with_you_and_guide_you_through_your_language_learning_journey"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="350dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="23dp"
+            android:text="**Emphasis on Hangul**: We believe in immersing learners in the Korean script from the very beginning. That's why we've chosen to forego Romanization and focus on helping users become familiar with Hangul characters. "
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="23dp"
+            android:text="**Practical Learning**: Our app is designed to equip you with practical language skills that you can use in real-life situations, whether you're travelling, working, or simply engaging with Korean media."
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="23dp"
+            android:text="**EPS TOPIK Focus**: For those with aspirations to work in Korea, our specialised EPS TOPIK section prepares you for the exam that's crucial for employment opportunities. "
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="23dp"
+            android:text="We are committed to continually improving and expanding our app. We're actively working on adding more content, including intermediate-level material, to meet the evolving needs of our users."
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="27dp"
+            android:text="Thank you for choosing GANADARA K-Training. We're excited to be a part of your language learning journey!"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="350dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="23dp"
+            android:text="*If you have any questions, feedback, or suggestions, please feel free to reach out to us at [contact@ganadaraktraining.com].*"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

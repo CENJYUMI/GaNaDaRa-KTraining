@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/yeeeeeellllllooowwww"
-    tools:context=".Quiz.NumbersUnitQuiz.NumbersUnitsFragment">
+    tools:context=".quiz.numbersUnitQuiz.NumbersUnitsFragment">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -24,72 +24,86 @@
         android:id="@+id/questionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="148dp"
         android:text="@string/e"
         android:textColor="#FFFFFF"
-        android:textSize="60sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/option1"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/button_selector"
         android:gravity="center"
         android:text="@string/ae2"
         android:textColor="#FFFFFF"
-        android:textSize="48sp"
+        android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
         android:id="@+id/option2"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="55dp"
         android:background="@drawable/button_selector"
         android:gravity="center"
         android:text="@string/e2"
         android:textColor="#FFFFFF"
-        android:textSize="48sp"
+        android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/option1" />
 
     <TextView
         android:id="@+id/option3"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="28dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/button_selector"
         android:gravity="center"
         android:text="@string/oe2"
         android:textColor="#FFFFFF"
-        android:textSize="48sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option2" />
 
     <TextView
         android:id="@+id/option4"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="28dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/button_selector"
         android:gravity="center"
         android:text="@string/o2"
         android:textColor="#FFFFFF"
-        android:textSize="48sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/option3" />
+
+    <ImageView
+        android:id="@+id/questionImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/cabbage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

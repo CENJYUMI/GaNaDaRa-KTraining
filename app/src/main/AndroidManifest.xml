@@ -21,20 +21,23 @@
         android:theme="@style/Theme.FinalProject"
         tools:targetApi="31">
         <activity
-            android:name=".DirectionRecycler.DirectionInfo3Activity"
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.App.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".DirectionRecycler.DirectionInfo2Activity"
-            android:exported="false"
-            android:label="@string/title_activity_direction_info2"
-            android:theme="@style/Theme.FinalProject" />
+            android:name=".directionRecycler.DirectionInfo3Activity"
+            android:exported="false" />
         <activity
-            android:name=".DirectionRecycler.DirectionInfoActivity"
-            android:exported="false"
-            android:label="@string/title_activity_direction_info"
-            android:theme="@style/Theme.FinalProject" />
-        <activity
-            android:name=".UnitRecycler.UnitsInfoActivity"
+            android:name=".unitRecycler.UnitsInfoActivity"
             android:exported="false" />
         <activity
             android:name=".WelcomeActivity"
@@ -44,18 +47,9 @@
             android:exported="true" />
         <activity
             android:name=".RegisterActivity"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+
     </application>
 
 </manifest>

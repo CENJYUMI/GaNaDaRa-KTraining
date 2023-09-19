@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yeeeeeellllllooowwww"
+    tools:context=".quiz.dateTime.DateTimeFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="380dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/greenboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text="@string/e"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/option1image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/option2image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/option3image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option1image"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/option4image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option2image"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/option2image"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="103dp"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="13dp"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/option4image"
+        app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
